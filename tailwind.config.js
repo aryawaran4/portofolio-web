@@ -2,7 +2,15 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '35%': '35%',
+        '90%': '90%'
+      },
+      height: {
+        '128': '32rem',
+      }
+    },
     colors: {
       white: '#ffffff',
       primary: '#d9dad4',

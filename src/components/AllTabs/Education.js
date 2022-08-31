@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <div className="Education w-full">
       <div className="flex flex-col gap-0 items-center">
-            <div className="flex gap-8" style={{width:"50%"}}> 
+            <div className="flex gap-8 w-full md:w-1/2"> 
                 <div style={{width:"49%"}} className="relative bottom-1">
                     <div className='flex flex-col gap-3'>
                         <p className="text-secondary font-medium">Universitas Sumatera Utara</p>                        
@@ -22,7 +22,7 @@ const Education = () => {
                 </div>
                 <div style={{width:"49%"}}></div>
             </div>
-            <div className="flex gap-8" style={{width:"50%"}}> 
+            <div className="flex gap-8 w-full md:w-1/2"> 
                 <div style={{width:"49%"}}></div>
                 <div className="flex flex-col items-center" style={{width:"2%"}}>
                     <p className="w-4 h-4 bg-tertiary rounded-full"></p>

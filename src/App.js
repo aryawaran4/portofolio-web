@@ -1,7 +1,7 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faGithubSquare, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faArrowDown, faCode, faContactCard, faDownload, faEllipsis, faEnvelope, faLocationDot, faMouse, faPaperPlane, faPhone, faSwatchbook } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faBars, faCode, faContactCard, faDownload, faEllipsis, faEnvelope, faFile, faHome, faLocationDot, faMouse, faPaperPlane, faPhone, faPhoneFlip, faSwatchbook, faUser, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { Player } from '@lottiefiles/react-lottie-player';
 import Tabs from './components/AllTabs/Tabs';
 import Slider from './components/Slider/Slider';
@@ -31,22 +31,99 @@ function App() {
     )
   }
 
+  const menuFunction = () => {
+    const navMenu = document.getElementById('popup-navmenu')
+    const navToggle = document.getElementById('open-popup-navmenu')
+    const navClose = document.getElementById('close-popup-navmenu')
+
+    if(navToggle){
+      navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+      })
+    }
+    if(navClose){
+      navClose.addEventListener('click', ()=> {
+        navMenu.classList.remove('show-menu')
+      })
+    }    
+  }
+
   return (
     <div className="App flex flex-col items-center">     
 
       {/* <---------------------------------------------------------NAVBAR----------------------------------------------------------------> */}
-      <div id='nav-bar' className='w-full h-fit bg-white fixed top-0 text-secondary text-opacity-70 flex justify-center z-50'>
+      <div id='nav-bar' className='w-full hidden md:flex h-fit bg-white fixed top-0 text-secondary text-opacity-70 justify-center z-50'>
         <div id='nav-bar-content' className='font-medium w-3/4 text-lg py-4 flex justify-between items-center'>
           <div>          
             <p>Rangga</p>
           </div>
           <div className='flex gap-10 items-center'>
-            <a href='#home'>Home</a>
-            <a href='#about'>About</a>
-            <a href='#skills'>Skills</a>
-            <a href="#portofolio">Portofolio</a>
-            <a href="#contact">Contact me</a>
+            <a className='text-tertiary text-opacity-60 hover:text-opacity-100' href='#home'>Home</a>
+            <a className='text-tertiary text-opacity-60 hover:text-opacity-100' href='#about'>About</a>
+            <a className='text-tertiary text-opacity-60 hover:text-opacity-100' href='#skills'>Skills</a>
+            <a className='text-tertiary text-opacity-60 hover:text-opacity-100' href="#portofolio">Portofolio</a>
+            <a className='text-tertiary text-opacity-60 hover:text-opacity-100' href="#contact">Contact me</a>
             {/* <p>darkmode</p> */}
+          </div>
+        </div>
+      </div>
+
+      <div id='nav-bar' className='w-full fixed bottom-0 md:hidden h-fit bg-white text-secondary text-opacity-70 z-50'>
+        <div className='flex flex-col w-full items-center'>
+          <div id='nav-bar-content' className='font-medium w-full flex flex-col items-center text-base py-4 bg-white z-10 fixed bottom-0'>
+            <div className='w-4/5 flex justify-between items-center'>
+              <div>           
+                <p>Rangga</p>
+              </div>
+              <div className='flex gap-10 items-center'>
+                <p onClick={menuFunction} id='open-popup-navmenu' className='cursor-pointer'><FontAwesomeIcon icon={faBars} size="xl"/></p>
+                  {/* <p>darkmode</p> */}
+                </div>
+            </div>
+          </div>
+          <div id='popup-navmenu' className='z-20 w-full bg-white fixed -bottom-100 grid grid-cols-3 grid-row-2 py-8 gap-y-8'>
+            <div className='font-medium cursor-pointer'>
+              <a href='#home' className='flex flex-col items-center text-tertiary text-opacity-60 hover:text-opacity-100'><FontAwesomeIcon icon={faHome} size="lg" className='mb-1'/>
+                <div>
+                  Home
+                </div>
+              </a>
+            </div>
+            <div className='font-medium cursor-pointer'>
+              <a href='#about' className='flex flex-col items-center text-tertiary text-opacity-60 hover:text-opacity-100'><FontAwesomeIcon icon={faUser} size="lg" className='mb-1'/>
+                <div>
+                  About
+                </div>
+              </a>
+            </div>
+            <div className='font-medium cursor-pointer'>
+              <a href='#skills' className='flex flex-col items-center text-tertiary text-opacity-60 hover:text-opacity-100'><FontAwesomeIcon icon={faCode} size="lg" className='mb-1'/>
+                <div>
+                  Skills
+                </div>
+              </a>
+            </div>
+            <div className='font-medium cursor-pointer'>
+              <a href='#portofolio' className='flex flex-col items-center text-tertiary text-opacity-60 hover:text-opacity-100'><FontAwesomeIcon icon={faFile} size="lg" className='mb-1'/>
+                <div>
+                  Portofolio
+                </div>
+              </a>
+            </div>
+            <div className='font-medium cursor-pointer'>
+              <a href='#contact' className='flex flex-col items-center text-tertiary text-opacity-60 hover:text-opacity-100'><FontAwesomeIcon icon={faPhoneFlip} size="lg" className='mb-1'/>
+                <div>
+                  Contact me
+                </div>
+              </a>
+            </div>
+            <div id='close-popup-navmenu' className='font-medium cursor-pointer'>
+              <p onClick={menuFunction} className='flex flex-col items-center text-tertiary text-opacity-60 hover:text-opacity-100'><FontAwesomeIcon icon={faXmark} size="lg" className='mb-1'/>
+                <div>
+                  Close
+                </div>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -55,14 +132,16 @@ function App() {
 
       {/* <---------------------------------------------------------HOME------------------------------------------------------------------> */}
       <div id='home' className='w-3/4 z-0'> 
-        <div className='w-full bg-white flex items-center py-48 pb-16'>
-          <div className=' flex flex-col gap-4 items-start text-tertiary' style={{width: '25%'}}>
+        <div className='w-full bg-white flex flex-wrap items-center py-48 pt-16 md:pt-48 pb-16'>
+          <div className=' flex flex-col gap-4 items-start text-tertiary w-1/4'
+          >
             <a href='https://www.linkedin.com/in/aryawarangganasusilo/'><FontAwesomeIcon icon={faLinkedin} size="xl"/></a> 
             <a href='https://github.com/aryawaran4'><FontAwesomeIcon icon={faGithubSquare} size="xl"/></a>
             <a href='#contact'><FontAwesomeIcon icon={faEnvelope} size="xl"/></a> 
           </div>
 
-          <div className='flex flex-col gap-4' style={{width: '40%'}}>
+          <div className='flex flex-col gap-4 order-last w-full md:w-2/5 mt-6 md:mt-0'
+          >
             <h1 className='font-semibold text-5xl'>Hi, I'am Rangga</h1>    
             <p className='text-xl font-semibold text-secondary text-opacity-70'>Frontend developer</p>
             <p className='text-secondary text-opacity-70'>              
@@ -77,13 +156,15 @@ function App() {
             </a>
           </div>
 
-          <div style={{width: '35%'}}>
+          <div 
+          className="md:order-last w-35%"
+          >
             <Player
               autoplay
               keepLastFrame
               // src="https://assets10.lottiefiles.com/packages/lf20_qwl4gi2d.json"
               src={require("../src/assets/hello.json")}
-              style={{ height: '400px', width: '400px' }}
+              className="w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
             >
             </Player>          
           </div>
@@ -108,24 +189,24 @@ function App() {
           <p className='text-secondary text-opacity-70'>My introduction</p>
         </div>
 
-        <div className='flex items-center py-24 justify-center'>
-          <div className='w-1/2'>
+        <div className='flex flex-col md:flex-row items-center py-24 justify-center'>
+          <div className='w-full md:w-1/2'>
             <Player
               autoplay
               loop
               src={require("../src/assets/about.json")}
-              style={{ height: '350px', width: '350px' }}
+              className="w-[250px] h-[250px] md:w-[350px] md:h-[350px]"
             >
             </Player> 
           </div>
           
-          <div className='flex flex-col gap-10 w-1/2'>
-            <p className='text-secondary text-opacity-70'>
+          <div className='flex flex-col gap-10 w-full md:w-1/2 items-center'>
+            <p className='text-secondary text-opacity-70 mt-6 md:mt-0 text-center md:text-left'>
               An innovative and visioner guy who seek on achievement. 
               I can find my self in team and work well with others.
               Love to work on web development and web design.
             </p>
-            <div className='flex justify-around'>
+            <div className='flex justify-around w-full'>
               <div className='font-semibold text-center'>
                 <p className='text-4xl'>01+</p>
                 <div className='text-secondary text-opacity-70'>
@@ -168,8 +249,8 @@ function App() {
         </div>
 
         <div className='flex items-center py-24 justify-center w-full'>
-          <div className='flex justify-around gap-10 w-full'>
-            <div className='flex gap-4 w-1/3'>
+          <div className='flex flex-col md:flex-row justify-around gap-10 w-full'>
+            <div className='flex gap-4 w-full md:w-1/3'>
               <div className='relative top-2 text-tertiary'>
                 <FontAwesomeIcon icon={faCode} size="2xl"/>
               </div>
@@ -241,7 +322,7 @@ function App() {
               </div>
             </div>
 
-            <div className='flex gap-4 w-1/3'>
+            <div className='flex gap-4 w-full md:w-1/3'>
               <div className='relative top-2 text-tertiary'>
                 <FontAwesomeIcon icon={faSwatchbook} size="2xl"/>
               </div>
@@ -264,7 +345,7 @@ function App() {
               </div>
             </div>
 
-            <div className='flex gap-4 w-1/3'>
+            <div className='flex gap-4 w-full md:w-1/3'>
               <div className='relative top-2 text-tertiary'>
                 <FontAwesomeIcon icon={faEllipsis} size="2xl"/>
               </div>
@@ -316,7 +397,7 @@ function App() {
 
       
       {/* <---------------------------------------------------------PORTOFOLIO------------------------------------------------------------> */}
-      <div id='portofolio' className='w-3/4 flex flex-col items-center z-0 pt-28'>
+      <div id='portofolio' className='w-full flex flex-col items-center z-0 pt-28'>
         <div className='w-fit font-semibold text-center'>
           <p className='text-5xl mb-2'>Portofolio</p>
           <p className='text-secondary text-opacity-70'>Most recent work</p>
@@ -328,18 +409,19 @@ function App() {
       {/* <-------------------------------------------------------------------------------------------------------------------------------> */}
 
       {/* <---------------------------------------------------------SERVICES--------------------------------------------------------------> */}
-      <div id='services' className='w-3/4 flex flex-col items-center z-0 py-28'>
-        <div className='w-3/4 font-semibold text-center bg-tertiary text-white flex items-center px-10 rounded-md'>
-          <div className='flex flex-col items-start w-1/2'>
+      <div id='services' className='w-full md:w-3/4 flex flex-col items-center z-0 py-28'>
+        <div className='w-3/4 font-semibold text-center bg-tertiary text-white flex flex-col md:flex-row items-center py-10 md:py-0 px-10 rounded-md'>
+          <div className='flex flex-col md:items-start w-full md:w-1/2 items-center'>
             <p className='font-semibold text-xl mb-2'>You have a new project ???</p>
-            <p className='text-left '>Contact our team now and we're gonna start working on your new project.</p>
+            <p className='text-center md:text-left'>Contact our team now and we're gonna start working on your new project.</p>
             <div className='mt-10'>
                 <a target="_blank" href='https://www.instagram.com/dartdroid/' className='p-4 font-semibold bg-white text-tertiary w-fit rounded-md shadow-md' rel="noreferrer">Contact us 
                 <span className='ml-2 relative top-0.5'><FontAwesomeIcon icon={faContactCard}/></span> </a>
             </div>
           </div>
-          <div className='w-1/2 flex flex-col items-end'>
+          <div className='w-full md:w-1/2 flex flex-col md:items-end items-center -mb-10 md:mb-0'>
             <Player
+              className='md:relative md: left-6'
               autoplay
               loop
               src={require("../src/assets/envelope.json")}
@@ -359,8 +441,8 @@ function App() {
           <p className='text-secondary text-opacity-70'>Get in touch</p>
         </div> 
 
-        <div className='py-24 flex'>
-          <div className='flex flex-col gap-8' style={{width:"40%"}}>
+        <div className='py-24 flex md:flex-row flex-col'>
+          <div className='flex flex-col gap-8 w-full md:w-2/5'>
             <div className='flex items-center gap-4'>
               <div className='relative text-tertiary'>
                 <FontAwesomeIcon icon={faPhone} size="2xl"/>
@@ -389,7 +471,7 @@ function App() {
                 </div>
             </div>
           </div>
-          <form ref={refForm} onSubmit={sendEmail} className='flex flex-col items-start gap-8' style={{width:"60%"}}>
+          <form ref={refForm} onSubmit={sendEmail} className='flex flex-col items-start gap-8 mt-8 md:mt-0 md:w-3/5 w-full'>
             <div className='flex gap-4 items-center'>
               <div className='w-1/2 bg-tertiary bg-opacity-20 rounded-md px-4 pt-3 pb-3'>
                 <label>Name</label>
@@ -423,25 +505,25 @@ function App() {
       
       {/* <---------------------------------------------------------FOOTER----------------------------------------------------------------> */}
       <div className='w-full flex flex-col items-center z-0 py-14 bg-tertiary'>
-        <div className='w-3/4 flex justify-around items-start text-white'>
-          <div className='w-1/3 flex flex-col items-center'>
+        <div className='md:w-3/4 flex md:flex-row flex-col justify-around gap-8 items-start text-white w-90%'>
+          <div className='md:w-1/3 flex flex-col items-center'>
             <div>
               <p className='text-2xl font-semibold text-left'>Rangga</p>
               <p>Frontend developer</p>
             </div>
           </div>
-          <div className='flex gap-6 items-center justify-center w-1/3'>
+          <div className='flex md:flex-row flex-col gap-6 items-left md:items-center justify-center md:w-1/3'>
             <a href='#services'>Services</a>
             <a href='#portofolio'>Portofolio</a>
             <a href='#contact'>Contact me</a>
           </div>
-          <div className='flex  gap-6 items-center justify-center w-1/3'>
+          <div className='flex  gap-6 items-center justify-center md:w-1/3'>
             <a href='https://www.facebook.com/profile.php?id=100008863803353'><FontAwesomeIcon icon={faFacebookF}/></a> 
             <a href='https://www.instagram.com/aryawaranggana.s/'><FontAwesomeIcon icon={faInstagram}/></a> 
             <a href='https://twitter.com/aryarangga2000'><FontAwesomeIcon icon={faTwitter}/></a>            
           </div>
         </div> 
-        <div className='text-white mt-28'>
+        <div className='text-white mt-28 pb-20 md:pb-0'>
           <p className='text-xs text-white text-opacity-30'>&copy; aryawaran4. All right reserved</p>
         </div>
       </div>
