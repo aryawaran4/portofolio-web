@@ -164,7 +164,7 @@ function App() {
               keepLastFrame
               // src="https://assets10.lottiefiles.com/packages/lf20_qwl4gi2d.json"
               src={require("../src/assets/hello.json")}
-              className="w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
+              className="w-[250px] h-[250px] md:w-[400px] md:h-[400px]"
             >
             </Player>          
           </div>
@@ -441,7 +441,7 @@ function App() {
           <p className='text-secondary text-opacity-70'>Get in touch</p>
         </div> 
 
-        <div className='py-24 flex md:flex-row flex-col'>
+        <div className='w-full py-24 flex md:flex-row flex-col'>
           <div className='flex flex-col gap-8 w-full md:w-2/5'>
             <div className='flex items-center gap-4'>
               <div className='relative text-tertiary'>
@@ -472,24 +472,24 @@ function App() {
             </div>
           </div>
           <form ref={refForm} onSubmit={sendEmail} className='flex flex-col items-start gap-8 mt-8 md:mt-0 md:w-3/5 w-full'>
-            <div className='flex gap-4 items-center'>
-              <div className='w-1/2 bg-tertiary bg-opacity-20 rounded-md px-4 pt-3 pb-3'>
+            <div className='flex w-full flex-col md:flex-row gap-4 items-center'>
+              <div className='w-full md:w-1/2 bg-tertiary bg-opacity-20 rounded-md px-4 py-3 flex flex-col'>
                 <label>Name</label>
                 <input className='pt-2 outline-none bg-tertiary bg-opacity-0' type="text" name="name" required />
               </div>
-              <div className='w-1/2 bg-tertiary bg-opacity-20 rounded-md px-4 pt-3 pb-3'>
+              <div className='w-full md:w-1/2 bg-tertiary bg-opacity-20 rounded-md px-4 py-3 flex flex-col'>
                 <label>Email</label>
                 <input className='pt-2 outline-none bg-tertiary bg-opacity-0' type="email" name="email"  required />
               </div>
             </div>
-            <div className='w-full bg-tertiary bg-opacity-20 rounded-md px-4 pt-3 pb-3'>
+            <div className='w-full bg-tertiary bg-opacity-20 rounded-md px-4 py-3'>
                 <label>Subject</label>
                 <input className='pt-2 outline-none bg-tertiary bg-opacity-0 w-full' type="text" name="subject" required />
             </div>
-            <div className='w-full bg-tertiary bg-opacity-20 rounded-md px-4 pt-3 pb-3'>
+            <div className='w-full bg-tertiary bg-opacity-20 rounded-md px-4 py-3'>
               <label>Message</label>
               <textarea
-              className='outline-none bg-tertiary bg-opacity-0 w-full h-44 pt-2'
+              className='outline-none bg-tertiary bg-opacity-0 w-full h-44 pt-3'
               name='message'
               required>                
               </textarea>
