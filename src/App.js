@@ -145,10 +145,8 @@ function App() {
             <h1 className='font-semibold text-5xl'>Hi, I'am Rangga</h1>    
             <p className='text-xl font-semibold text-secondary text-opacity-70'>Frontend developer</p>
             <p className='text-secondary text-opacity-70'>              
-              Fresh graduate computer science student with experience in
-              web design and web development.
-              I like to make your web design come true and working it
-              together to make it even better.
+            Fresh graduate computer science student with experience in web design and web development.              
+            I like to make your web design come true and work it together to make it even better.
             </p>
             <a href='#contact' className='mt-4'>
               <button className='p-4 font-semibold bg-tertiary text-white w-fit rounded-md shadow-md'>Contact me 
@@ -202,9 +200,10 @@ function App() {
           
           <div className='flex flex-col gap-10 w-full md:w-1/2 items-center'>
             <p className='text-secondary text-opacity-70 mt-6 md:mt-0 text-center md:text-left'>
-              An innovative and visioner guy who seek on achievement. 
-              I can find my self in team and work well with others.
-              Love to work on web development and web design.
+            A goal-oriented individual that praises effort and communication is a key to success as an individual or team.               
+            I’m never afraid to learn and ask for something that helps me develop much further.              
+            I can find myself in the team and work well with others.              
+            Love to work on web development and web design.
             </p>
             <div className='flex justify-around w-full'>
               <div className='font-semibold text-center'>
@@ -232,7 +231,7 @@ function App() {
               </div>
             </div>
             <div className='mt-4'>
-              <a target="_blank" href='https://drive.google.com/file/d/1RjI4miNVeu9YM7AebOHuz-vBtbIpYDx4/view?usp=sharing' className='p-4 font-semibold bg-tertiary text-white w-fit rounded-md shadow-md' rel="noreferrer">Download CV 
+              <a target="_blank" href='https://drive.google.com/file/d/1eU91RXkaRxeLWH9K35Z3eij6hugAX460/view?usp=sharing' className='p-4 font-semibold bg-tertiary text-white w-fit rounded-md shadow-md' rel="noreferrer">Download CV 
               <span className='ml-2 relative top-0.5'><FontAwesomeIcon icon={faDownload}/></span> </a>
             </div>
           </div>
@@ -263,61 +262,61 @@ function App() {
                 <div className='font-semibold'>
                   <div className='flex justify-between'>
                     <p className='mb-2'>HTML</p>
-                    <p className='text-secondary text-opacity-70'>90%</p>
+                    <p className='text-secondary text-opacity-70'>Expert</p>
                   </div>
-                  <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
+                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
                     <div className="bg-tertiary h-2.5 rounded-full" style={{width: "90%"}}></div>
-                  </div>            
+                  </div>             */}
                 </div>
 
                 <div className='font-semibold'>
                   <div className='flex justify-between'>
                     <p className='mb-2'>CSS</p>
-                    <p className='text-secondary text-opacity-70'>90%</p>
+                    <p className='text-secondary text-opacity-70'>Expert</p>
                   </div>
-                  <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
+                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
                     <div className="bg-tertiary h-2.5 rounded-full" style={{width: "90%"}}></div>
-                  </div>            
+                  </div>             */}
                 </div>
 
                 <div className='font-semibold'>
                   <div className='flex justify-between'>
                     <p className='mb-2'>JavaScript</p>
-                    <p className='text-secondary text-opacity-70'>60%</p>
+                    <p className='text-secondary text-opacity-70'>Intermediate</p>
                   </div>
-                  <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
+                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
                     <div className="bg-tertiary h-2.5 rounded-full" style={{width: "60%"}}></div>
-                  </div>            
+                  </div>             */}
                 </div>
 
                 <div className='font-semibold'>
                   <div className='flex justify-between'>
                     <p className='mb-2'>TypeScript</p>
-                    <p className='text-secondary text-opacity-70'>60%</p>
+                    <p className='text-secondary text-opacity-70'>Intermediate</p>
                   </div>
-                  <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
+                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
                     <div className="bg-tertiary h-2.5 rounded-full" style={{width: "60%"}}></div>
-                  </div>            
+                  </div>             */}
                 </div>
 
                 <div className='font-semibold'>
                   <div className='flex justify-between'>
                     <p className='mb-2'>Angular</p>
-                    <p className='text-secondary text-opacity-70'>60%</p>
+                    <p className='text-secondary text-opacity-70'>Intermediate</p>
                   </div>
-                  <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
+                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
                     <div className="bg-tertiary h-2.5 rounded-full" style={{width: "60%"}}></div>
-                  </div>            
+                  </div>             */}
                 </div>
 
                 <div className='font-semibold'>
                   <div className='flex justify-between'>
-                    <p className='mb-2'>React</p>
-                    <p className='text-secondary text-opacity-70'>45%</p>
+                    <p className='mb-2'>React JS</p>
+                    <p className='text-secondary text-opacity-70'>Intermediate</p>
                   </div>
-                  <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
+                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
                     <div className="bg-tertiary h-2.5 rounded-full" style={{width: "45%"}}></div>
-                  </div>            
+                  </div>             */}
                 </div>
               </div>
             </div>
@@ -335,11 +334,11 @@ function App() {
                 <div className='font-semibold'>
                   <div className='flex justify-between'>
                     <p className='mb-2'>Figma</p>
-                    <p className='text-secondary text-opacity-70'>50%</p>
+                    <p className='text-secondary text-opacity-70'>Intermediate</p>
                   </div>
-                  <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
+                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
                     <div className="bg-tertiary h-2.5 rounded-full" style={{width: "50%"}}></div>
-                  </div>            
+                  </div>             */}
                 </div>
 
               </div>
@@ -352,27 +351,27 @@ function App() {
               <div className='flex flex-col gap-6 w-full'>
                 <div>
                   <p className='font-semibold text-xl'>Others</p>
-                  <p className='text-secondary text-opacity-70 text-sm'>TBD</p>
+                  <p className='text-secondary text-opacity-70 text-sm'>Under 1 years</p>
                 </div>
                 
                 <div className='font-semibold'>
                   <div className='flex justify-between'>
                     <p className='mb-2'>Firebase</p>
-                    <p className='text-secondary text-opacity-70'>30%</p>
+                    <p className='text-secondary text-opacity-70'>Intermediate</p>
                   </div>
-                  <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
+                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
                     <div className="bg-tertiary h-2.5 rounded-full" style={{width: "30%"}}></div>
-                  </div>            
+                  </div>             */}
                 </div>
 
                 <div className='font-semibold'>
                   <div className='flex justify-between'>
                     <p className='mb-2'>Github</p>
-                    <p className='text-secondary text-opacity-70'>60%</p>
+                    <p className='text-secondary text-opacity-70'>Intermediate</p>
                   </div>
-                  <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
+                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
                     <div className="bg-tertiary h-2.5 rounded-full" style={{width: "60%"}}></div>
-                  </div>            
+                  </div>             */}
                 </div>
 
               </div>
@@ -444,7 +443,7 @@ function App() {
         <div className='w-full py-24 flex md:flex-row flex-col'>
           <div className='flex flex-col gap-8 w-full md:w-2/5'>
             <div className='flex items-center gap-4'>
-              <div className='relative text-tertiary'>
+              <div className='relative text-tertiary w-1/12 flex flex-col items-center'>
                 <FontAwesomeIcon icon={faPhone} size="2xl"/>
               </div>
               <div>
@@ -453,7 +452,7 @@ function App() {
                 </div>
             </div>
             <div className='flex items-center gap-4'>
-              <div className='relative text-tertiary'>
+              <div className='relative text-tertiary w-1/12 flex flex-col items-center'>
                 <FontAwesomeIcon icon={faEnvelope} size="2xl"/>
               </div>
               <div>
@@ -462,7 +461,7 @@ function App() {
                 </div>
             </div>
             <div className='flex items-center gap-4'>
-              <div className='relative text-tertiary'>
+              <div className='relative text-tertiary w-1/12 flex flex-col items-center'>
                 <FontAwesomeIcon icon={faLocationDot} size="2xl"/>
               </div>
               <div>
