@@ -7,6 +7,24 @@ const Work = () => {
     <div className="Work">        
         <div className="flex flex-col gap-0 items-center">
           <div className="flex gap-8 w-full md:w-1/2"> 
+              <div style={{width:"49%"}}></div>
+              <div className="flex flex-col items-center" style={{width:"2%"}}>
+                  <p className="w-4 h-4 bg-tertiary rounded-full"></p>
+                  <p className='w-0.5 -mt-1 h-full bg-tertiary bg-opacity-70'></p>
+              </div>
+              <div style={{width:"49%"}} className="relative bottom-1">
+                  <div className='flex flex-col gap-3'>
+                      <p className="text-secondary font-medium">Transcosmos Indonesia</p>                        
+                      <div className="text-secondary text-opacity-70">
+                          <p>South Jakarta, Jakarta, Indonesia</p>
+                          <p className='font-medium'>Frontend Developer</p>
+                          <p>Developing website projects.</p>
+                      </div>
+                      <p className='text-secondary text-opacity-40'><span><FontAwesomeIcon icon={faCalendarAlt}/></span> November 2022 - Present</p>
+                  </div>
+              </div>
+          </div>
+          <div className="flex gap-8 w-full md:w-1/2"> 
               <div style={{width:"49%"}} className="relative bottom-1">
                   <div className='flex flex-col gap-3'>
                       <p className="text-secondary font-medium">XTEND INDONESIA</p>                        
@@ -15,7 +33,7 @@ const Work = () => {
                           <p className='font-medium'>Frontend Developer</p>
                           <p>Developing & responsible to maintaining client's website.</p>
                       </div>
-                      <p className='text-secondary text-opacity-40'><span><FontAwesomeIcon icon={faCalendarAlt}/></span> 2022 - Present</p>
+                      <p className='text-secondary text-opacity-40'><span><FontAwesomeIcon icon={faCalendarAlt}/></span> January 2022 - October 2022</p>
                   </div>
               </div>
               <div className="flex flex-col items-center" style={{width:"2%"}}>
@@ -38,7 +56,7 @@ const Work = () => {
                           <p className='font-medium'>Frontend Developer</p>
                           <p>Developing a company website using Angular framework.</p>
                       </div>
-                      <p className='text-secondary text-opacity-40'><span><FontAwesomeIcon icon={faCalendarAlt}/></span> 2021 - 2022</p>
+                      <p className='text-secondary text-opacity-40'><span><FontAwesomeIcon icon={faCalendarAlt}/></span> September 2021 - January 2022</p>
                   </div>
               </div>
           </div>
@@ -51,7 +69,7 @@ const Work = () => {
                           <p className='font-medium'>Frontend Developer</p>
                           <p>Making a website to monitoring AKHLAK report in all PELINDO Branch.</p>
                       </div>
-                      <p className='text-secondary text-opacity-40'><span><FontAwesomeIcon icon={faCalendarAlt}/></span> 2021 - 2021</p>
+                      <p className='text-secondary text-opacity-40'><span><FontAwesomeIcon icon={faCalendarAlt}/></span> June 2021 - July 2021</p>
                   </div>
               </div>
               <div className="flex flex-col items-center" style={{width:"2%"}}>
