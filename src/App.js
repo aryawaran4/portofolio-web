@@ -188,7 +188,7 @@ function App() {
             </p>
             <div className="flex justify-around w-full">
               <div className="font-semibold text-center">
-                <p className="text-4xl">&#8805;01</p>
+                <p className="text-4xl">&#8804;02</p>
                 <div className="text-secondary text-opacity-70">
                   <p>Years</p>
                   <p>experiencee</p>
@@ -476,7 +476,7 @@ function App() {
                 className="p-4 font-semibold bg-white text-tertiary w-fit rounded-md shadow-md"
                 rel="noreferrer"
               >
-                Contact us
+                Contact Us
                 <span className="ml-2 relative top-0.5">
                   <FontAwesomeIcon icon={faContactCard} />
                 </span>{" "}
