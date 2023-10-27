@@ -180,11 +180,10 @@ function App() {
 
           <div className="flex flex-col gap-10 w-full md:w-1/2 items-center">
             <p className="text-secondary text-opacity-70 mt-6 md:mt-0 text-center md:text-left">
-              A goal-oriented individual that praises effort and communication
-              is a key to success as an individual or team. I’m never afraid to
-              learn and ask for something that helps me develop much further. I
-              can find myself in the team and work well with others. Love to
-              work on web development and web design.
+              Have an experience in developing and working on some project with
+              office, personal team, and individual. Some of it are from the
+              offshores project from Malaysia to Japan. At a free time love to
+              open my gadget to learn some Japanese Language from DuoLingo.
             </p>
             <div className="flex justify-around w-full">
               <div className="font-semibold text-center">
