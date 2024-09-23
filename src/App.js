@@ -27,6 +27,7 @@ import Slider from "./components/Slider/Slider";
 import Navbar from "./components/Navbar/Navbar";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   const refForm = useRef();
@@ -50,43 +51,6 @@ function App() {
         }
       );
   };
-
-  // const Navbar = () => {
-  //   const [currentSection, setCurrentSection] = useState("");
-  //   const [sections, setSections] = useState([]);
-
-  //   const isNavbarOnSection = (section) => {
-  //     const scrollPosition = window.scrollY;
-  //     const sectionY = section.getBoundingClientRect().top;
-
-  //     return scrollPosition >= sectionY;
-  //   };
-
-  //   const updateSections = () => {
-  //     const sectionElements = document.querySelectorAll("section");
-  //     setSections(Array.from(sectionElements));
-  //   };
-
-  //   const handleScroll = () => {
-  //     for (const section of sections) {
-  //       if (isNavbarOnSection(section)) {
-  //         setCurrentSection(section.id);
-  //         break;
-  //       }
-  //     }
-  //   };
-
-  //   React.useEffect(() => {
-  //     updateSections(); // Initialize sections
-  //     window.addEventListener("scroll", handleScroll);
-
-  //     return () => {
-  //       window.removeEventListener("scroll", handleScroll);
-  //     };
-  //   }, []);
-
-  //   // Code that uses the currentSection variable can be placed here.
-  // };
 
   return (
     <div className="App flex flex-col items-center">
@@ -115,13 +79,7 @@ function App() {
               Frontend developer
             </p>
             <p className="text-secondary text-opacity-70">
-              A graduate computer science student with web design and
-              development experience. Already make a decent experience at this
-              industry.
-            </p>
-            <p className="text-secondary text-opacity-70">
-              And I like to make your web design come true and work it together
-              to make it even better.
+              Software Engineer with 3 years of experience in web applications and engineering solutions for international clients. Proficient in HTML, CSS, JavaScript frameworks, and relational databases, with a strong foundation in UI/UX design.
             </p>
             <a href="#contact" className="mt-4">
               <button className="p-4 font-semibold bg-tertiary text-white w-fit rounded-md shadow-md">
@@ -180,14 +138,15 @@ function App() {
 
           <div className="flex flex-col gap-10 w-full md:w-1/2 items-center">
             <p className="text-secondary text-opacity-70 mt-6 md:mt-0 text-center md:text-left">
+              Skilled in front-end and back-end development, troubleshooting, and implementing user-driven features.
               Have an experience in developing and working on some project with
-              office, personal team, and individual. Some of it are from the
-              offshores project from Malaysia to Japan. At a free time love to
-              open my gadget to learn some Japanese Language from DuoLingo.
+              office, personal team, and individual. <br />Some of it are from the
+              offshores project from Malaysia, Japan, and Singapore. At a free time love to
+              open my gadget to learn some Japanese and Arabic Lesson from DuoLingo.
             </p>
             <div className="flex justify-around w-full">
               <div className="font-semibold text-center">
-                <p className="text-4xl">&#8804;02</p>
+                <p className="text-4xl">03</p>
                 <div className="text-secondary text-opacity-70">
                   <p>Years</p>
                   <p>experiencee</p>
@@ -203,7 +162,7 @@ function App() {
               </div>
 
               <div className="font-semibold text-center">
-                <p className="text-4xl">02</p>
+                <p className="text-4xl">03</p>
                 <div className="text-secondary text-opacity-70">
                   <p>Companies</p>
                   <p>worked</p>
@@ -229,201 +188,7 @@ function App() {
       {/* <-------------------------------------------------------------------------------------------------------------------------------> */}
 
       {/* <---------------------------------------------------------SKILL-----------------------------------------------------------------> */}
-      <div
-        id="skills"
-        className="w-3/4 flex flex-col items-center z-0 pt-28 section"
-      >
-        <div className="w-fit font-semibold text-center">
-          <p className="text-5xl mb-2">Skills</p>
-          <p className="text-secondary text-opacity-70">My technical level</p>
-        </div>
-
-        <div className="flex items-center py-24 justify-center w-full">
-          <div className="flex flex-col md:flex-row justify-around gap-10 w-full">
-            <div className="flex gap-4 w-full md:w-1/3">
-              <div className="relative top-2 text-tertiary">
-                <FontAwesomeIcon icon={faCode} size="2xl" />
-              </div>
-              <div className="flex flex-col gap-6 w-full">
-                <div>
-                  <p className="font-semibold text-xl">Frontend developer</p>
-                  <p className="text-secondary text-opacity-70 text-sm">
-                    &#8805; 2 years
-                  </p>
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">HTML</p>
-                    <p className="text-secondary text-opacity-70">Expert</p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "90%"}}></div>
-                  </div>             */}
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">CSS</p>
-                    <p className="text-secondary text-opacity-70">Expert</p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "90%"}}></div>
-                  </div>             */}
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">JavaScript</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "60%"}}></div>
-                  </div>             */}
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">Jquery</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "60%"}}></div>
-                  </div>             */}
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">TypeScript</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "60%"}}></div>
-                  </div>             */}
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">Angular</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "60%"}}></div>
-                  </div>             */}
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">React JS</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "45%"}}></div>
-                  </div>             */}
-                </div>
-              </div>
-            </div>
-
-            <div className="flex gap-4 w-full md:w-1/3">
-              <div className="relative top-2 text-tertiary">
-                <FontAwesomeIcon icon={faSwatchbook} size="2xl" />
-              </div>
-              <div className="flex flex-col gap-6 w-full">
-                <div>
-                  <p className="font-semibold text-xl">Web Design</p>
-                  <p className="text-secondary text-opacity-70 text-sm">
-                    More than 1 years
-                  </p>
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">Figma</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "50%"}}></div>
-                  </div>             */}
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">Adobe XD</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "50%"}}></div>
-                  </div>             */}
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">Photoshop</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "50%"}}></div>
-                  </div>             */}
-                </div>
-              </div>
-            </div>
-
-            <div className="flex gap-4 w-full md:w-1/3">
-              <div className="relative top-2 text-tertiary">
-                <FontAwesomeIcon icon={faEllipsis} size="2xl" />
-              </div>
-              <div className="flex flex-col gap-6 w-full">
-                <div>
-                  <p className="font-semibold text-xl">Others</p>
-                  <p className="text-secondary text-opacity-70 text-sm">
-                    Under 1 years
-                  </p>
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">Firebase</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "30%"}}></div>
-                  </div>             */}
-                </div>
-
-                <div className="font-semibold">
-                  <div className="flex justify-between">
-                    <p className="mb-2">Git</p>
-                    <p className="text-secondary text-opacity-70">
-                      Intermediate
-                    </p>
-                  </div>
-                  {/* <div className="w-full bg-secondary bg-opacity-20 rounded-full h-2.5 ">
-                    <div className="bg-tertiary h-2.5 rounded-full" style={{width: "60%"}}></div>
-                  </div>             */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Skills />
       {/* <-------------------------------------------------------------------------------------------------------------------------------> */}
 
       {/* <---------------------------------------------------------QUALIFICATION---------------------------------------------------------> */}
@@ -465,13 +230,13 @@ function App() {
               You have a new project ???
             </p>
             <p className="text-center md:text-left">
-              Contact our team now and we're gonna start working on your new
+              Contact me now and I'm gonna start working on your new
               project.
             </p>
             <div className="mt-10">
               <a
                 target="_blank"
-                href="https://www.instagram.com/dartdroid/"
+                href="https://www.instagram.com/aryawaranggana.s/"
                 className="p-4 font-semibold bg-white text-tertiary w-fit rounded-md shadow-md"
                 rel="noreferrer"
               >
