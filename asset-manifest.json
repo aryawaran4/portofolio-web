@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portofolio-web/static/css/main.75b57eaa.css",
-    "main.js": "/portofolio-web/static/js/main.79158390.js",
+    "main.css": "/portofolio-web/static/css/main.8763f997.css",
+    "main.js": "/portofolio-web/static/js/main.9740e1d8.js",
     "static/js/787.8828cf2f.chunk.js": "/portofolio-web/static/js/787.8828cf2f.chunk.js",
-    "static/media/sibada.svg": "/portofolio-web/static/media/sibada.11ca3cf415309749a5e2e019b0426db2.svg",
-    "static/media/aws_toba.svg": "/portofolio-web/static/media/aws_toba.8a5eea5740ad49546a0a2290640ee0e5.svg",
-    "static/media/pramuwisma.svg": "/portofolio-web/static/media/pramuwisma.d30449810173139504b4fd866d884b95.svg",
-    "static/media/tirtanadi_dashboard.svg": "/portofolio-web/static/media/tirtanadi_dashboard.e8e67d57d337be757b4e9b4e71bde17e.svg",
+    "static/media/movie_app.svg": "/portofolio-web/static/media/movie_app.1665c8af2905fa9390773032fb2a3454.svg",
+    "static/media/sibada.svg": "/portofolio-web/static/media/sibada.b71913f06654ee590c77d71dc57dd639.svg",
+    "static/media/aws_toba.svg": "/portofolio-web/static/media/aws_toba.e84b0ea4ad6d9b6eb7ae4d6af7b529e2.svg",
+    "static/media/pramuwisma.svg": "/portofolio-web/static/media/pramuwisma.9339368eba58e796c782350170458b95.svg",
+    "static/media/tirtanadi_dashboard.svg": "/portofolio-web/static/media/tirtanadi_dashboard.17c7e9b9ed7245f888b50527f38913db.svg",
     "index.html": "/portofolio-web/index.html",
-    "main.75b57eaa.css.map": "/portofolio-web/static/css/main.75b57eaa.css.map",
-    "main.79158390.js.map": "/portofolio-web/static/js/main.79158390.js.map",
+    "main.8763f997.css.map": "/portofolio-web/static/css/main.8763f997.css.map",
+    "main.9740e1d8.js.map": "/portofolio-web/static/js/main.9740e1d8.js.map",
     "787.8828cf2f.chunk.js.map": "/portofolio-web/static/js/787.8828cf2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75b57eaa.css",
-    "static/js/main.79158390.js"
+    "static/css/main.8763f997.css",
+    "static/js/main.9740e1d8.js"
   ]
 }
