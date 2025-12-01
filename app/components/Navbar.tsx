@@ -60,13 +60,13 @@ export default function Navbar() {
 
         {/* Mobile dropdown */}
         {open && (
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-full mt-3 w-[min(92%,1100px)] rounded-2xl backdrop-blur-xl bg-white/6 border border-white/10 p-4 flex flex-col gap-2 md:hidden">
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-full mt-3 w-[min(100%,1100px)] rounded-2xl backdrop-blur-xl bg-black/50 border border-white/10 p-4 flex flex-col gap-2 md:hidden">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-white/90 hover:text-white font-medium uppercase tracking-wider text-sm px-3 py-2 rounded-lg transition-colors"
+                className="text-white/90 hover:text-white font-medium tracking-wider text-sm px-3 py-2 rounded-lg transition-colors"
               >
                 {l.label}
               </a>
