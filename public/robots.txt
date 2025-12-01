@@ -1,0 +1,21 @@
+# robots.txt for Arya Waranggana Susilo Portfolio
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.next/
+
+# Crawl delay (optional, in seconds)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://aryawaranggana.com/sitemap.xml
