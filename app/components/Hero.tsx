@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 import type { HeroContent } from "@/app/types/content";
 
@@ -63,6 +63,24 @@ export default function Hero({ content }: HeroProps) {
 
     setExperienceText(months > 0 ? `${years}+ years` : `${years} years`);
   }, [experienceStartDate]);
+
+  const handleAnchorClick = useCallback((event: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = event.currentTarget.getAttribute("href") ?? "";
+    if (!href.startsWith("#")) {
+      return;
+    }
+
+    const target = document.querySelector(href);
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+    window.history.pushState(null, "", href);
+    requestAnimationFrame(() => {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, []);
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-4 md:px-8 relative overflow-hidden">
@@ -128,12 +146,14 @@ export default function Hero({ content }: HeroProps) {
           <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up">
             <a
               href={content.primaryCta.href}
+              onClick={handleAnchorClick}
               className="inline-block text-center px-8 py-4 bg-white text-black hover:bg-gray-100 font-semibold rounded-lg transition duration-300 border border-white tracking-wide text-sm shadow-lg hover:shadow-xl hover:shadow-white/20">
               {content.primaryCta.label}
             </a>
 
             <a
               href={content.secondaryCta.href}
+              onClick={handleAnchorClick}
               className="inline-block text-center px-8 py-4 border-2 border-white text-white hover:bg-white/10 backdrop-blur-md font-semibold rounded-lg transition duration-300 tracking-wide text-sm shadow-lg">
               {content.secondaryCta.label}
             </a>

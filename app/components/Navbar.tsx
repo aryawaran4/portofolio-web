@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 type NavbarProps = {
   showProfile?: boolean;
@@ -11,13 +11,29 @@ export default function Navbar({ showProfile = false }: NavbarProps) {
     { href: '#hero', label: 'Home' },
     ...(showProfile ? [{ href: '#profile', label: 'Profile' }] : []),
     { href: '#projects', label: 'Projects' },
-    { href: '#about', label: 'About' },
     { href: '#mileage', label: 'Mileage' },
     // { href: '#blog', label: 'Blog' },
     { href: '#contact', label: 'Contact' },
   ];
 
   const [open, setOpen] = useState(false);
+
+  const handleNavClick = useCallback((event: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = event.currentTarget.getAttribute('href') ?? '';
+    if (!href.startsWith('#')) {
+      return;
+    }
+
+    const target = document.querySelector(href);
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+    setOpen(false);
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    window.history.pushState(null, '', href);
+  }, []);
 
   return (
     <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[min(96%,1200px)]">
@@ -38,6 +54,7 @@ export default function Navbar({ showProfile = false }: NavbarProps) {
             <a
               key={l.href}
               href={l.href}
+              onClick={handleNavClick}
               className="text-white/90 hover:text-white font-medium tracking-wider text-sm px-3 py-2 rounded-lg transition-colors"
             >
               {l.label}
@@ -70,7 +87,7 @@ export default function Navbar({ showProfile = false }: NavbarProps) {
               <a
                 key={l.href}
                 href={l.href}
-                onClick={() => setOpen(false)}
+                onClick={handleNavClick}
                 className="text-white/90 hover:text-white font-medium tracking-wider text-sm px-3 py-2 rounded-lg transition-colors"
               >
                 {l.label}
