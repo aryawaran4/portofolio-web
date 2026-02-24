@@ -2,9 +2,14 @@
 
 import { useState } from 'react';
 
-export default function Navbar() {
+type NavbarProps = {
+  showProfile?: boolean;
+};
+
+export default function Navbar({ showProfile = false }: NavbarProps) {
   const links = [
     { href: '#hero', label: 'Home' },
+    ...(showProfile ? [{ href: '#profile', label: 'Profile' }] : []),
     { href: '#projects', label: 'Projects' },
     { href: '#about', label: 'About' },
     { href: '#mileage', label: 'Mileage' },

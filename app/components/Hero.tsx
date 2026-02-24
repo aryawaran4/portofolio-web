@@ -1,11 +1,34 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-export default function Hero() {
-  const [stars, setStars] = useState<{ id: number; left: number; top: number; size: number; duration: number; delay: number; opacity: number }[]>([]);
+import type { HeroContent } from "@/app/types/content";
+
+type HeroProps = {
+  content: HeroContent;
+};
+
+export default function Hero({ content }: HeroProps) {
+  const [stars, setStars] = useState<{
+    id: number;
+    left: number;
+    top: number;
+    size: number;
+    duration: number;
+    delay: number;
+    opacity: number;
+  }[]>([]);
 
   const [experienceText, setExperienceText] = useState<string>("");
+
+  const experienceStartDate = useMemo(() => {
+    if (!content.experienceStart) {
+      return null;
+    }
+
+    const parsed = new Date(content.experienceStart);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+  }, [content.experienceStart]);
 
   useEffect(() => {
     // generate stars only on the client after mount to avoid SSR/client mismatch
@@ -24,10 +47,14 @@ export default function Hero() {
     setStars(generateStars());
 
     // compute experience text on the client only
-    const startDate = new Date(2021, 5, 1); // June 1, 2021 (month is 0-indexed)
+    if (!experienceStartDate) {
+      setExperienceText("");
+      return;
+    }
+
     const currentDate = new Date();
-    let years = currentDate.getFullYear() - startDate.getFullYear();
-    let months = currentDate.getMonth() - startDate.getMonth();
+    let years = currentDate.getFullYear() - experienceStartDate.getFullYear();
+    let months = currentDate.getMonth() - experienceStartDate.getMonth();
 
     if (months < 0) {
       years--;
@@ -35,7 +62,7 @@ export default function Hero() {
     }
 
     setExperienceText(months > 0 ? `${years}+ years` : `${years} years`);
-  }, []);
+  }, [experienceStartDate]);
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-4 md:px-8 relative overflow-hidden">
@@ -59,47 +86,58 @@ export default function Hero() {
       ))}
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto text-left relative z-10">
-        <h1 className="typ-h1 font-bold text-white mb-2 tracking-tight drop-shadow-lg" data-aos="fade-up">
-          Arya Waranggana Susilo
-        </h1>
+      <div className="max-w-6xl mx-auto text-left relative z-10 w-full">
+        <div className="backdrop-blur-xl bg-white/6 rounded-3xl border border-white/10 p-6 md:p-10 w-full">
+          <h1 className="typ-h1 font-bold text-white mb-2 tracking-tight drop-shadow-lg" data-aos="fade-up">
+            {content.name}
+          </h1>
 
-        {/* Role */}
-        <p
-          className="typ-subtitle bg-linear-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent font-semibold mb-4 drop-shadow-lg"
-          data-aos="fade-up">
-          Frontend Engineer
-        </p>
-
-        {/* Value statement (1-2 short sentences) */}
-        {experienceText ? (
-          <p className="typ-p font-medium text-theme-muted mb-4" data-aos="fade-up">
-            <span className="font-semibold">{experienceText}</span> experience. I optimize performance, SEO, and build scalable UI architecture to
-            improve search visibility and product reliability.
+          {/* Role */}
+          <p
+            className="typ-subtitle bg-linear-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent font-semibold mb-4 drop-shadow-lg"
+            data-aos="fade-up">
+            {content.role}
           </p>
-        ) : (
-          <p className="typ-p font-medium text-theme-muted mb-4" data-aos="fade-up">
-            I optimize performance, SEO, and build scalable UI architecture to improve search visibility and product reliability.
+
+          {/* Value statement (1-2 short sentences) */}
+          {experienceText ? (
+            <p className="typ-p font-medium text-theme-muted mb-4" data-aos="fade-up">
+              <span className="font-semibold">{experienceText}</span> {content.experienceLabel || "experience"}. {content.valueStatement}
+            </p>
+          ) : (
+            <p className="typ-p font-medium text-theme-muted mb-4" data-aos="fade-up">
+              {content.valueStatement}
+            </p>
+          )}
+
+          {/* Optional tagline */}
+          <p className="typ-caption text-gray-300 mb-6 text-pretty" data-aos="fade-up">
+            {content.tagline}
           </p>
-        )}
 
-        {/* Optional tagline */}
-        <p className="typ-caption text-gray-300 mb-8" data-aos="fade-up">
-          Angular · Vue · React · TypeScript
-        </p>
+          <div className="flex flex-wrap gap-3 mb-8" data-aos="fade-up">
+            {experienceText && (
+              <span className="typ-caption text-xs bg-white/10 px-3 py-1 rounded-full text-gray-200 grow-0 shrink-0">
+                {experienceText} {content.experienceLabel || "experience"}
+              </span>
+            )}
+            <span className="typ-caption text-xs bg-white/10 px-3 py-1 rounded-full text-gray-200 grow-0 shrink-0">Frontend Systems</span>
+            <span className="typ-caption text-xs bg-white/10 px-3 py-1 rounded-full text-gray-200 grow-0 shrink-0">Design to Delivery</span>
+          </div>
 
-        <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up">
-          <a
-            href="#projects"
-            className="inline-block text-center px-8 py-4 bg-white text-black hover:bg-gray-100 font-semibold rounded-lg transition duration-300 border border-white tracking-wide text-sm shadow-lg hover:shadow-xl hover:shadow-white/20">
-            Explore My Work
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up">
+            <a
+              href={content.primaryCta.href}
+              className="inline-block text-center px-8 py-4 bg-white text-black hover:bg-gray-100 font-semibold rounded-lg transition duration-300 border border-white tracking-wide text-sm shadow-lg hover:shadow-xl hover:shadow-white/20">
+              {content.primaryCta.label}
+            </a>
 
-          <a
-            href="#contact"
-            className="inline-block text-center px-8 py-4 border-2 border-white text-white hover:bg-white/10 backdrop-blur-md font-semibold rounded-lg transition duration-300 tracking-wide text-sm shadow-lg">
-            Get In Touch
-          </a>
+            <a
+              href={content.secondaryCta.href}
+              className="inline-block text-center px-8 py-4 border-2 border-white text-white hover:bg-white/10 backdrop-blur-md font-semibold rounded-lg transition duration-300 tracking-wide text-sm shadow-lg">
+              {content.secondaryCta.label}
+            </a>
+          </div>
         </div>
       </div>
     </section>

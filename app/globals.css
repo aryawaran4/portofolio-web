@@ -40,13 +40,25 @@ body {
 .typ-h3{font-size:var(--typ-scale-h3);line-height:1.2}
 .typ-h4{font-size:var(--typ-scale-h4);line-height:1.25}
 .typ-subtitle{font-size:var(--typ-scale-sub);line-height:1.3;opacity:.95}
-.typ-p{font-size:var(--typ-scale-p);line-height:1.6;color:var(--foreground);opacity:.95}
+.typ-p{font-size:var(--typ-scale-p);line-height:1.6;color:inherit;opacity:.95}
 
 /* small caption (use for tags/stack labels) */
 .typ-caption{font-size:0.875rem;line-height:1.4;opacity:.85}
 
 /* make sure our classes override Tailwind when applied */
 .typ-h1, .typ-h2, .typ-h3, .typ-h4, .typ-subtitle, .typ-p, .typ-caption { font-family: inherit; }
+
+@media (max-width: 640px) {
+  :root{
+    --typ-scale-h1: clamp(1.8rem, 8vw, 2.6rem);
+    --typ-scale-h2: clamp(1.45rem, 6.5vw, 2rem);
+    --typ-scale-h3: clamp(1.2rem, 4.5vw, 1.45rem);
+    --typ-scale-h4: clamp(1.05rem, 3.8vw, 1.15rem);
+    --typ-scale-sub: clamp(0.95rem, 3.6vw, 1.05rem);
+    --typ-scale-p: clamp(0.95rem, 3.2vw, 1rem);
+  }
+  .typ-caption{font-size:0.825rem;}
+}
 
 /* Theme based on Hero background (space-like black/indigo gradient + subtle grid) */
 :root {
