@@ -2,9 +2,9 @@
   "portofolio-web": {
     "hero": {
       "name": "Arya Waranggana Susilo",
-      "role": "Multi-Framework Frontend Engineer (Angular + React/Next.js + Vue)",
+      "role": "Multi-Framework Frontend Engineer (Angular + React/Next + Vue)",
       "tagline": "Angular · Vue · React · TypeScript",
-      "valueStatement": "Frontend Engineer with 4+ years of production experience across Angular, React/Next.js, and Vue delivering scalable, high-performance web applications in POS, IoT, e-commerce, and enterprise domains. Equally comfortable designing NgRx state architectures, Next.js SSR pipelines, or Vue Composition API systems. Known for strong engineering fundamentals: component design patterns, performance optimization, third-party integrations, and cross-functional collaboration that drives measurable product outcomes.",
+      "valueStatement": "Frontend Engineer with 4+ years of production experience across Angular, React/Next, and Vue delivering scalable, high-performance web applications in POS, IoT, e-commerce, and enterprise domains. Equally comfortable designing NgRx state architectures, Next SSR pipelines, or Vue Composition API systems. Known for strong engineering fundamentals: component design patterns, performance optimization, third-party integrations, and cross-functional collaboration that drives measurable product outcomes.",
       "experienceStart": "2021-06-01",
       "experienceLabel": "experience",
       "primaryCta": {
@@ -20,8 +20,8 @@
       "title": "About",
       "subtitle": "A concise summary of my approach, values, and skills.",
       "story": [
-        "I build frontends that treat performance and clarity as core features. Over the past several years I’ve delivered production systems across IoT, POS, e‑commerce, hospitality, enterprise, and government, improving search visibility, stabilizing critical flows, and raising product reliability. My work spans hybrid Angular–WordPress platforms, food ordering systems, and ERP dashboards. I focus on measurable outcomes and durable solutions.",
-        "I prefer pragmatic, long-term solutions: clean architecture, observable systems, and repeatable processes. Cross-cultural client work (including Japanese-market projects) taught me to prioritize clarity in communication and delivery. I take ownership of the product surface, from accessible markup to integrations and monitoring, so teams can move faster with confidence."
+        "Frontend Engineer with 4+ years of experience building production-grade web applications across IoT, POS, ERP, government, and e-commerce domains using React.js, Vue/Nuxt.js, and Angular.",
+        "Strong in translating UI/UX designs into clean, reusable, and scalable component-based architectures, with deep experience integrating REST APIs, payment gateways, and legacy backend systems. Proven ability to optimize performance, resolve complex integration issues, and collaborate in English with overseas stakeholders while delivering high-quality frontend solutions."
       ],
       "philosophy": "Engineering Philosophy: I optimize for performance, maintainability, and clear developer ergonomics. I focus on small, testable components, well-defined contracts, and incremental performance wins that compound over time.",
       "skills": [
@@ -37,10 +37,10 @@
           ]
         },
         {
-          "category": "React / Next.js",
+          "category": "React / Next",
           "items": [
             "React",
-            "Next.js",
+            "Next",
             "Redux Toolkit",
             "React Query",
             "Redux"
@@ -118,19 +118,19 @@
           "id": 1,
           "title": "Hybrid Web Platform Optimization (IDEKU)",
           "highlights": [
-            "Led optimization across a multi-framework web ecosystem (Angular–WordPress hybrid, Vue pages, Next.js landing pages).",
-            "Improved Google indexing 70 → 170 pages (+143%) using framework-specific SEO: Angular Universal meta services, Vue head management, Next.js dynamic sitemaps.",
+            "Led optimization across a multi-framework web ecosystem (Angular–WordPress hybrid, Vue pages, Next landing pages).",
+            "Improved Google indexing 70 → 170 pages (+143%) using framework-specific SEO: Angular Universal meta services, Vue head management, Next dynamic sitemaps.",
             "Consistently achieved Lighthouse scores 95–99% through lazy loading, SSR, code splitting, and image optimization tuned per framework.",
             "Implemented unified GA4 & GTM instrumentation across Angular services, React context providers, and Vue plugins."
           ],
-          "stack": "Angular / Next.js / Vue, TypeScript, Tailwind CSS, WordPress REST API, SEO Tools, GA4, GTM"
+          "stack": "Angular / Next / Vue, TypeScript, Tailwind CSS, WordPress REST API, SEO Tools, GA4, GTM"
         },
         {
           "id": 2,
           "title": "Food Ordering Platform (IDEKU)",
           "highlights": [
             "Led frontend engineering for a Singapore luxury hotel food ordering platform primary stack: Angular, TypeScript, RxJS, Tailwind CSS.",
-            "Delivered companion web products (bio-link platform, company profile) using Vue SSR and React / Next.js based on project requirements.",
+            "Delivered companion web products (bio-link platform, company profile) using Vue SSR and React / Next based on project requirements.",
             "Integrated 7 payment gateways (Stripe, GrabFood, KPay, Doku, UOB, AXS, GDC) across Angular service layers, React hooks, and Vue composables.",
             "Resolved critical backend pricing bugs by enforcing TypeScript contracts across Angular models, React Zod schemas, and Vue composable return types.",
             "Built cross-framework atomic component systems Angular NgModules, React TypeScript generics, Vue SFCs reducing duplication by ~40%."
@@ -168,7 +168,7 @@
             "Achieved Core Web Vitals compliance and fast page load times to improve search visibility and user engagement.",
             "Structured content hierarchy and internal linking strategy to improve indexing and organic traffic."
           ],
-          "stack": "React, TypeScript, Tailwind CSS, Next.js, SEO Tools, Core Web Vitals"
+          "stack": "React, TypeScript, Tailwind CSS, Next, SEO Tools, Core Web Vitals"
         },
         {
           "id": 6,
@@ -179,7 +179,7 @@
             "Integrated AI-powered automatic blog generation (OpenAI API) enabling daily content publishing to improve search rankings and lead generation.",
             "Set up a content automation pipeline so the studio can maintain a consistent publishing schedule without manual effort, scaling organic reach."
           ],
-          "stack": "React, TypeScript, Tailwind CSS, Next.js, OpenAI API, SEO Tools, Content Automation"
+          "stack": "React, TypeScript, Tailwind CSS, Next, OpenAI API, SEO Tools, Content Automation"
         }
       ]
     },
@@ -222,7 +222,7 @@
           "title": "Technical Breadth & Industries",
           "accentColor": "",
           "items": [
-            "Tech: Angular, Vue, React/Next.js, TypeScript, RxJS, Pinia, React Query, Tailwind CSS, Node.js, AEM, Figma",
+            "Tech: Angular, Vue, React/Next, TypeScript, RxJS, Pinia, React Query, Tailwind CSS, Node.js, AEM, Figma",
             "Industry expertise: E-commerce, hospitality, real estate, travel, government systems, IoT, POS"
           ]
         }
@@ -234,20 +234,20 @@
         "variant": "combined"
       },
       "name": "Arya Waranggana Susilo",
-      "summary": "Frontend Engineer with 4+ years of production experience across Angular, React/Next.js, and Vue delivering scalable, high-performance web applications in POS, IoT, e-commerce, and enterprise domains. Equally comfortable designing NgRx state architectures, Next.js SSR pipelines, or Vue Composition API systems. Known for strong engineering fundamentals: component design patterns, performance optimization, third-party integrations, and cross-functional collaboration that drives measurable product outcomes.",
+      "summary": "Frontend Engineer with 4+ years of experience building production-grade web applications across IoT, POS, ERP, government, and e-commerce domains using React.js, Vue/Nuxt.js, and Angular. Strong in translating UI/UX designs into clean, reusable, and scalable component-based architectures, with deep experience integrating REST APIs, payment gateways, and legacy backend systems. Proven ability to optimize performance, resolve complex integration issues, and collaborate in English with overseas stakeholders while delivering high-quality frontend solutions.",
       "experience": [
         {
           "title": "Frontend Engineer",
           "company": "IDEKU",
           "period": "Jun 2024 – Nov 2025",
           "bullets": [
-            "Led end-to-end frontend engineering for a Singapore luxury hotel food ordering platform built with Angular (TypeScript, RxJS, Tailwind), integrating a legacy REST backend; also delivered companion web products using Vue (SSR) and React (Next.js) depending on project SEO and performance requirements.",
-            "Optimized a multi-framework web ecosystem (Angular–WordPress hybrid, Vue pages, Next.js landing pages) consistently achieving Lighthouse scores of 95–99% through lazy loading, SSR, code splitting, and image optimization strategies tuned per framework.",
-            "Grew Google Search Console indexing from ~70 to ~170 pages on a ~400-page application by implementing framework-specific SEO solutions: Angular Universal meta services, Next.js dynamic sitemaps, and Vue head management aligned to each platform's rendering model.",
-            "Engineered payment integrations (Stripe, GrabFood, KPay, Doku, AXS, UOB, GDC) across Angular service layers, React custom hooks, and Vue composables with shared patterns for async error handling, retry logic, and optimistic UI.",
-            "Designed and maintained a cross-framework atomic component system: Angular component library with NgModules, React shared components with TypeScript generics, and Vue SFCs with defineProps reducing redundancy by ~40% across 3+ products.",
-            "Instrumented analytics stack (GTM, GA4, Meta Pixel, Hotjar, Zoho CRM) using Angular services, React context providers, and Vue plugins enabling unified digital marketing visibility.",
-            "Identified and resolved critical pricing logic bugs by enforcing strict TypeScript data contracts across Angular models, React Zod schemas, and Vue composable return types eliminating runtime pricing inconsistencies."
+            "Developed and maintained production web applications using Angular and React with a focus on scalable, maintainable component-based architecture.",
+            "Luxury Hotel Food Ordering Platform (Singapore): built with Angular, TypeScript, and Tailwind CSS, integrating a legacy backend and payment gateways (Stripe, GrabFood, Doku).",
+            "IDEKU Food QR: engineered dynamic pricing, tipping, voucher validation, and real-time menu configuration on top of legacy services.",
+            "IDEKU Portal: integrated UOB, AXS, GDC, and KPay services. Added Jest unit tests for cart and pricing logic plus API integration tests for checkout and payment validation. Synced frontend flows with mobile apps.",
+            "Worked closely with backend engineers to debug and resolve critical pricing logic issues, improving pricing consistency and transaction reliability.",
+            "IDEKU BioLink and Company Profile Platform: developed reusable atomic components and improved frontend health score from 25% to 99% through rendering and loading optimization.",
+            "Collaborated with cross-functional teams (backend, marketing, operations) to ship user-centric features aligned with business KPIs."
           ]
         },
         {
@@ -255,12 +255,13 @@
           "company": "Transcosmos Indonesia",
           "period": "Nov 2022 – May 2024",
           "bullets": [
-            "Led frontend development across multi-industry projects (real estate, travel, hospitality, tobacco) using Angular, Vue.js, and vanilla JavaScript adapting framework choice to project complexity and team context.",
-            "Maintained Japanese-language e-commerce pages using Adobe Experience Manager (AEM) with Mayaa JS and Vue component integrations.",
-            "Built Node.js automation tooling to replace manual QA and build workflows, reducing developer overhead by ~30% per sprint cycle.",
-            "Conducted structured QA across 200+ page multi-framework applications triaging rendering bugs, i18n inconsistencies, and hydration issues across Angular and Vue codebases.",
-            "Applied cross-framework SEO engineering: Angular Universal meta tags, Vue head management, and Next.js dynamic sitemap generation improving crawlability and search rankings across client sites.",
-            "Served as technical PIC for Japanese counterpart communications translating complex framework-specific trade-offs into clear, actionable project updates."
+            "Built responsive, production-ready web applications and company profile platforms for ANA, Panasonic Savasa, Japan Tobacco, and Aburayama Fukuoka using Vue, React, HTML, CSS, and JavaScript.",
+            "Developed and maintained Japanese-language web pages and e-commerce content for Nissen JP and Ishiguro Fishing using React, Adobe Experience Manager (AEM), and Mayaa JS.",
+            "Implemented reusable UI components and improved maintainability across multi-page corporate websites.",
+            "Led frontend slicing, responsive layout implementation, and resolved complex cross-browser display issues.",
+            "Conducted detailed QA for large-scale projects (200+ pages), ensuring layout consistency, translation accuracy, and production stability.",
+            "Acted as PIC for Japanese stakeholders, managing technical discussions and ensuring precise project delivery.",
+            "Built internal automation tools using Node.js to reduce repetitive tasks and improve workflow efficiency."
           ]
         },
         {
@@ -268,10 +269,12 @@
           "company": "Xtend Integrasi Indonesia",
           "period": "Sep 2021 – Oct 2022",
           "bullets": [
-            "Developed enterprise web applications (ERP, attendance systems, public service dashboards) using Angular and Vue.js covering full lifecycle from Figma design to deployment on government and corporate infrastructure.",
-            "Established scalable frontend architectures: Angular lazy-loaded NgModules for enterprise ERP, and Vue Composition API with Pinia for public-facing dashboards ensuring clean separation of concerns at scale.",
-            "Partnered with backend teams to define REST API contracts, implement HTTP interceptors (Angular) and Axios middleware (Vue/React) for auth token management, and resolve integration blockers proactively.",
-            "Contributed Figma UI/UX designs and translated them into responsive, accessible component trees in Angular (Angular Material) and Vue (Tailwind CSS) reducing design-to-development handoff time."
+            "Led frontend development for ERP System, Tirtanadi Portal and Dashboard, and Pramuwisma Management Web Application using Angular, Vue, and React.",
+            "Built TSF Hospital IoT dashboards and the SIBADA archive system with reusable UI components and API integrations.",
+            "Designed scalable frontend architecture with a modular component structure.",
+            "Collaborated intensively with backend teams to refine API contracts and reduce integration friction.",
+            "Proposed workflow improvements to enhance development velocity and reduce rework cycles.",
+            "Converted Figma UI/UX designs into clean, production-ready frontend code following best practices."
           ]
         }
       ],
@@ -288,10 +291,10 @@
           ]
         },
         {
-          "category": "React / Next.js",
+          "category": "React / Next",
           "items": [
             "React",
-            "Next.js",
+            "Next",
             "Redux Toolkit",
             "React Query",
             "Redux"
@@ -592,7 +595,7 @@
           "period": "Jun 2024 – Nov 2025",
           "bullets": [
             "Architected and led development of a custom food ordering system for a Singapore luxury hotel using Angular, TypeScript, RxJS, and Tailwind CSS fully integrated with a legacy REST backend, handling complex menu state and multi-step checkout flows.",
-            "Engineered an Angular–WordPress hybrid platform with a custom Angular SSR setup; improved landing page health score from 25% → 99% via lazy loading, tree-shaking, OnPush change detection, and image optimization.",
+            "Engineered an Angular–WordPress hybrid platform with a custom Angular SSR setup. Improved landing page health score from 25% → 99% via lazy loading, tree-shaking, OnPush change detection, and image optimization.",
             "Boosted Google Search Console indexing from ~70 to ~170 pages across a ~400-page Angular application by resolving sitemap generation issues, fixing route-based canonical tags, and implementing structured data schemas.",
             "Led payment gateway integrations (Stripe, GrabFood, KPay, Doku) within Angular service layers implementing RxJS-based async flows, error interceptors, and retry logic for resilient checkout experiences.",
             "Designed and implemented a reusable Angular component library (atomic design pattern) adopted across 3+ internal products, reducing duplication by ~40% and accelerating sprint delivery.",
@@ -702,9 +705,9 @@
   "portofolio-web-react": {
     "hero": {
       "name": "Arya Waranggana Susilo",
-      "role": "Frontend Engineer (React / Next.js)",
-      "tagline": "React · Next.js · TypeScript",
-      "valueStatement": "Frontend Engineer with 4+ years of experience building high-performance React and Next.js applications across e-commerce, POS, IoT, and enterprise domains. Skilled in React component architecture, server-side rendering (SSR), static site generation (SSG), React Query, Redux Toolkit, and Core Web Vitals optimization. Passionate about delivering fast, accessible, and maintainable user interfaces with measurable impact.",
+      "role": "Frontend Engineer (React / Next)",
+      "tagline": "React · Next · TypeScript",
+      "valueStatement": "Frontend Engineer with 4+ years of experience building high-performance React and Next applications across e-commerce, POS, IoT, and enterprise domains. Skilled in React component architecture, server-side rendering (SSR), static site generation (SSG), React Query, Redux Toolkit, and Core Web Vitals optimization. Passionate about delivering fast, accessible, and maintainable user interfaces with measurable impact.",
       "experienceStart": "2021-06-01",
       "experienceLabel": "experience",
       "primaryCta": {
@@ -720,7 +723,7 @@
       "title": "About",
       "subtitle": "A concise summary of my approach, values, and skills.",
       "story": [
-        "Frontend Engineer with 4+ years of experience building high-performance React and Next.js applications across e-commerce, POS, IoT, and enterprise domains. Skilled in React component architecture, server-side rendering (SSR), static site generation (SSG), React Query, Redux Toolkit, and Core Web Vitals optimization. Passionate about delivering fast, accessible, and maintainable user interfaces with measurable impact."
+        "Frontend Engineer with 4+ years of experience building high-performance React and Next applications across e-commerce, POS, IoT, and enterprise domains. Skilled in React component architecture, server-side rendering (SSR), static site generation (SSG), React Query, Redux Toolkit, and Core Web Vitals optimization. Passionate about delivering fast, accessible, and maintainable user interfaces with measurable impact."
       ],
       "philosophy": "Strong ownership mindset, treating every product as my own.",
       "skills": [
@@ -728,7 +731,7 @@
           "category": "Core",
           "items": [
             "React",
-            "Next.js",
+            "Next",
             "TypeScript",
             "Redux Toolkit",
             "React Query",
@@ -802,24 +805,24 @@
           "id": 1,
           "title": "Hybrid Web Platform Optimization (IDEKU)",
           "highlights": [
-            "Migrated a fragmented WordPress frontend to a Next.js hybrid (SSR + SSG) architecture for performance and SEO.",
-            "Improved Google indexing 70 → 170 pages (+143%) via Next.js dynamic sitemap generation and canonical meta tags (next/head).",
+            "Migrated a fragmented WordPress frontend to a Next hybrid (SSR + SSG) architecture for performance and SEO.",
+            "Improved Google indexing 70 → 170 pages (+143%) via Next dynamic sitemap generation and canonical meta tags (next/head).",
             "Increased landing page health score 25% → 99% via route-based code splitting, React Server Components, and next/image optimization.",
             "Implemented technical SEO, GA4 & GTM instrumentation via React context providers and custom event hooks."
           ],
-          "stack": "Next.js (SSR/SSG), TypeScript, Tailwind CSS, WordPress REST API, next/head, GA4, GTM"
+          "stack": "Next (SSR/SSG), TypeScript, Tailwind CSS, WordPress REST API, next/head, GA4, GTM"
         },
         {
           "id": 2,
           "title": "Food Ordering Platform (IDEKU)",
           "highlights": [
-            "Architected a fully custom food ordering platform using Next.js, React, React Query, and Tailwind CSS.",
+            "Architected a fully custom food ordering platform using Next, React, React Query, and Tailwind CSS.",
             "Implemented real-time cart, multi-step checkout, and order tracking using React state and React Query async mutations with optimistic UI.",
             "Integrated 7 payment gateways (Stripe, GrabFood, KPay, Doku, UOB, AXS, GDC) using React custom hooks with error boundary handling.",
             "Resolved critical backend pricing bugs by adding TypeScript Zod validation schemas on API response contracts.",
             "Built a shared React component library (atomic design, TypeScript generics) consumed across 3+ products, reducing dev time by ~40%."
           ],
-          "stack": "Next.js, React, TypeScript, React Query, Tailwind CSS, Custom Hooks"
+          "stack": "Next, React, TypeScript, React Query, Tailwind CSS, Custom Hooks"
         },
         {
           "id": 3,
@@ -841,7 +844,7 @@
             "Delivered UI/UX support using Figma, translating wireframes into production-ready component trees.",
             "Collaborated closely with backend engineers to resolve integration blockers and enforce clean API contracts."
           ],
-          "stack": "React, Next.js, Redux, Tailwind CSS, Figma"
+          "stack": "React, Next, Redux, Tailwind CSS, Figma"
         },
         {
           "id": 5,
@@ -852,7 +855,7 @@
             "Achieved Core Web Vitals compliance and fast page load times to improve search visibility and user engagement.",
             "Structured content hierarchy and internal linking strategy to improve indexing and organic traffic."
           ],
-          "stack": "React, TypeScript, Tailwind CSS, Next.js, SEO Tools, Core Web Vitals"
+          "stack": "React, TypeScript, Tailwind CSS, Next, SEO Tools, Core Web Vitals"
         },
         {
           "id": 6,
@@ -863,7 +866,7 @@
             "Integrated AI-powered automatic blog generation (OpenAI API) enabling daily content publishing to improve search rankings and lead generation.",
             "Set up a content automation pipeline so the studio can maintain a consistent publishing schedule without manual effort, scaling organic reach."
           ],
-          "stack": "React, TypeScript, Tailwind CSS, Next.js, OpenAI API, SEO Tools, Content Automation"
+          "stack": "React, TypeScript, Tailwind CSS, Next, OpenAI API, SEO Tools, Content Automation"
         }
       ]
     },
@@ -906,7 +909,7 @@
           "title": "Technical Breadth & Industries",
           "accentColor": "",
           "items": [
-            "Tech: React, Next.js, Redux Toolkit, React Query, Redux, TypeScript, Tailwind CSS, Node.js, Figma",
+            "Tech: React, Next, Redux Toolkit, React Query, Redux, TypeScript, Tailwind CSS, Node.js, Figma",
             "Industry expertise: E-commerce, hospitality, real estate, travel, government systems, IoT, POS"
           ]
         }
@@ -914,20 +917,20 @@
     },
     "profile": {
       "meta": {
-        "role": "React / Next.js-Focused Frontend Engineer",
+        "role": "React / Next-Focused Frontend Engineer",
         "variant": "react"
       },
       "name": "Arya Waranggana Susilo",
-      "summary": "Frontend Engineer with 4+ years of experience building high-performance React and Next.js applications across e-commerce, POS, IoT, and enterprise domains. Skilled in React component architecture, server-side rendering (SSR), static site generation (SSG), React Query, Redux Toolkit, and Core Web Vitals optimization. Passionate about delivering fast, accessible, and maintainable user interfaces with measurable impact.",
+      "summary": "Frontend Engineer with 4+ years of experience building high-performance React and Next applications across e-commerce, POS, IoT, and enterprise domains. Skilled in React component architecture, server-side rendering (SSR), static site generation (SSG), React Query, Redux Toolkit, and Core Web Vitals optimization. Passionate about delivering fast, accessible, and maintainable user interfaces with measurable impact.",
       "experience": [
         {
           "title": "Frontend Engineer",
           "company": "IDEKU",
           "period": "Jun 2024 – Nov 2025",
           "bullets": [
-            "Architected a custom food ordering platform for a Singapore luxury hotel using Next.js, TypeScript, React Query, and Tailwind CSS implementing SSR for SEO-critical pages and client-side React state for real-time cart and checkout flows.",
-            "Migrated a legacy web platform to a Next.js hybrid (SSR + SSG) architecture; improved Lighthouse performance score from 25% → 99% through image optimization (next/image), route-based code splitting, and React Server Components.",
-            "Scaled Google Search Console indexing from ~70 to ~170 pages across a ~400-page Next.js app by generating dynamic XML sitemaps, implementing canonical meta tags via next/head, and fixing crawl errors.",
+            "Architected a custom food ordering platform for a Singapore luxury hotel using Next, TypeScript, React Query, and Tailwind CSS implementing SSR for SEO-critical pages and client-side React state for real-time cart and checkout flows.",
+            "Migrated a legacy web platform to a Next hybrid (SSR + SSG) architecture. Improved Lighthouse performance score from 25% → 99% through image optimization (next/image), route-based code splitting, and React Server Components.",
+            "Scaled Google Search Console indexing from ~70 to ~170 pages across a ~400-page Next app by generating dynamic XML sitemaps, implementing canonical meta tags via next/head, and fixing crawl errors.",
             "Integrated third-party payment services (Stripe, GrabFood, KPay, Doku) using React custom hooks and async state management building resilient checkout flows with error boundary handling and optimistic UI updates.",
             "Developed a shared React component library (atomic design) consumed across 3+ products standardizing props interfaces with TypeScript generics and reducing UI inconsistencies and development time by ~40%.",
             "Implemented analytics instrumentation (GTM, GA4, Meta Pixel, Hotjar) via React context providers and custom event hooks enabling marketing teams with full conversion tracking.",
@@ -943,7 +946,7 @@
             "Built and maintained Japanese-language e-commerce pages using React with Adobe Experience Manager (AEM) integration and Mayaa JS templating.",
             "Authored internal Node.js automation tooling to replace manual build and QA steps, reducing repetitive developer overhead by ~30% per sprint cycle.",
             "Executed QA across 200+ page React applications documenting and triaging layout regressions, hydration mismatches, and content parity issues between locales.",
-            "Applied Next.js SEO best practices: dynamic sitemap generation, meta tag components, OpenGraph setup, and canonical URL logic improving organic search visibility across client sites.",
+            "Applied Next SEO best practices: dynamic sitemap generation, meta tag components, OpenGraph setup, and canonical URL logic improving organic search visibility across client sites.",
             "Served as technical liaison for Japanese stakeholders, translating React implementation trade-offs into digestible delivery timelines and status updates."
           ]
         },
@@ -952,7 +955,7 @@
           "company": "Xtend Integrasi Indonesia",
           "period": "Sep 2021 – Oct 2022",
           "bullets": [
-            "Built full-stack web applications (ERP systems, attendance dashboards, public service portals) using React and Next.js covering Figma design handoff through to Vercel deployment.",
+            "Built full-stack web applications (ERP systems, attendance dashboards, public service portals) using React and Next covering Figma design handoff through to Vercel deployment.",
             "Designed React component architectures with clear separation of concerns: presentational components, custom hooks for business logic, and centralized Redux stores for shared state.",
             "Partnered with backend engineers to design REST API schemas, implement React Query data-fetching layers, and build HTTP middleware for JWT auth and global error handling.",
             "Created UI/UX wireframes in Figma and implemented them as pixel-accurate React components with Tailwind CSS utility classes accelerating design-to-development cycles."
@@ -964,7 +967,7 @@
           "category": "Core",
           "items": [
             "React",
-            "Next.js",
+            "Next",
             "TypeScript",
             "Redux Toolkit",
             "React Query",
