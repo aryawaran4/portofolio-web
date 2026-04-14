@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arya Waranggana — Frontend Engineer",
     description:
-      "Precision-built. Pixel-perfect. Ship-ready. Frontend Engineer based in Jakarta.",
+      "Precision-built. Pixel-perfect. Ship-ready. Frontend Engineer. University of North Sumatra graduate. 5 years of experience across IoT, POS, ERP, government, and e-commerce — building scalable web applications with React, Vue, and Angular.",
     type: "website",
   },
 };
