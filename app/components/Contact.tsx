@@ -186,7 +186,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://aryawaran4.github.io/portofolio-web"
+              href="https://github.com/aryawaran4"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -252,26 +252,26 @@ export default function Contact() {
             © 2025 Arya Waranggana Susilo
           </span>
 
-          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
             <span
               style={{
-                width: 5,
-                height: 5,
-                borderRadius: "50%",
-                backgroundColor: "#c0392b",
-                display: "inline-block",
+              width: 20,
+              height: 12,
+              borderRadius: 2,
+              background: "linear-gradient(to bottom, #FF0000 50%, #FFFFFF 50%)",
+              display: "inline-block",
               }}
             />
             <span
               style={{
-                fontSize: 12,
-                fontWeight: 300,
-                color: "rgba(255,255,255,0.2)",
+              fontSize: 12,
+              fontWeight: 300,
+              color: "rgba(255,255,255,0.2)",
               }}
             >
               Indonesia
             </span>
-          </div>
+            </div>
         </div>
       </div>
     </section>

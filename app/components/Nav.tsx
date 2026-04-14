@@ -77,9 +77,6 @@ export default function Nav() {
                 {item}
               </a>
             ))}
-            <span className="avail-badge" style={{ marginLeft: 4 }}>
-              Available
-            </span>
           </nav>
 
           {/* Hamburger — mobile only */}
@@ -136,9 +133,6 @@ export default function Nav() {
             {item}
           </a>
         ))}
-        <span className="avail-badge" style={{ marginTop: 28 }}>
-          Available
-        </span>
       </nav>
     </>
   );

@@ -7,17 +7,21 @@ export const metadata: Metadata = {
     "Frontend Engineer with almost 5 years of experience across IoT, POS, ERP, government, and e-commerce — building precision-crafted, scalable web applications with React, Vue, and Angular.",
   keywords: [
     "Frontend Engineer",
+    "Frontend Developer",
+    "Web Developer",
     "React",
     "Angular",
     "Vue",
     "TypeScript",
-    "Jakarta",
+    "JavaScript",
     "Indonesia",
+    "University of North Sumatra",
+    "Universitas Sumatera Utara",
   ],
   openGraph: {
     title: "Arya Waranggana — Frontend Engineer",
     description:
-      "Precision-built. Pixel-perfect. Ship-ready. Frontend Engineer. University of North Sumatra graduate. 5 years of experience across IoT, POS, ERP, government, and e-commerce — building scalable web applications with React, Vue, and Angular.",
+      "Precision-built. Pixel-perfect. Ship-ready. Frontend Engineer. Universitas Sumatera Utara graduate. 5 years of experience across IoT, POS, ERP, government, and e-commerce — building scalable web applications with React, Vue, and Angular.",
     type: "website",
   },
 };
