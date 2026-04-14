@@ -48,7 +48,7 @@ body {
 
 /* ─── Circuit background ─────────────────────────────────── */
 .circuit-bg {
-  background-image: url('/circuit.svg');
+  background-image: url('/portofolio-web/circuit.svg');
   background-repeat: repeat;
   background-size: 200px 200px;
 }
