@@ -96,11 +96,8 @@ export default function Experience() {
           {experiences.map((exp, i) => (
             <div
               key={exp.company}
-              className="reveal-fade"
+              className="reveal-fade exp-row"
               style={{
-                display: 'grid',
-                gridTemplateColumns: '220px 1fr',
-                gap: 48,
                 paddingBottom: i < experiences.length - 1 ? 52 : 0,
                 marginBottom: i < experiences.length - 1 ? 52 : 0,
                 borderBottom:

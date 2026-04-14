@@ -71,23 +71,18 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
     <div
       ref={cardRef}
-      className="card reveal-fade"
+      className="card reveal-fade project-card-layout"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
         transitionDelay: `${index * 0.1}s`,
-        display: 'flex',
-        overflow: 'hidden',
       }}
     >
       {/* Dark thumbnail */}
       <div
-        className="circuit-bg"
+        className="circuit-bg project-thumb"
         style={{
-          width: 260,
-          minHeight: 200,
           backgroundColor: '#0d0d0d',
-          flexShrink: 0,
           position: 'relative',
           display: 'flex',
           alignItems: 'flex-start',
@@ -121,15 +116,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       </div>
 
       {/* Info panel */}
-      <div
-        style={{
-          flex: 1,
-          padding: '28px 32px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-        }}
-      >
+      <div className="project-info">
         <div>
           <p
             style={{

@@ -51,15 +51,7 @@ export default function Contact() {
       />
 
       <div className="container" style={{ position: "relative" }}>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 80,
-            alignItems: "center",
-            marginBottom: 80,
-          }}
-        >
+        <div className="contact-grid">
           {/* Left — headline */}
           <div>
             <span

@@ -73,13 +73,7 @@ export default function Skills() {
           Skills
         </span>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: 32,
-          }}
-        >
+        <div className="skills-grid">
           {skillGroups.map((group) => (
             <div key={group.category} className="reveal-fade">
               {/* Category label */}
@@ -131,17 +125,13 @@ export default function Skills() {
 
         {/* Education strip */}
         <div
-          className="reveal-fade"
+          className="reveal-fade edu-strip"
           style={{
             marginTop: 56,
             padding: '28px 32px',
             background: '#fff',
             border: '1px solid #e4e4e4',
             borderRadius: 13,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: 24,
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
@@ -164,6 +154,7 @@ export default function Skills() {
             </div>
           </div>
           <p
+            className="edu-thesis"
             style={{
               fontSize: 13,
               fontWeight: 300,

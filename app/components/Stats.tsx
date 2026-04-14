@@ -42,14 +42,7 @@ function StatItem({ stat, active }: { stat: Stat; active: boolean }) {
   const count = useCountUp(stat.value, 1000, active);
 
   return (
-    <div
-      style={{
-        flex: '1 1 0',
-        minWidth: 160,
-        padding: '0 16px',
-        borderLeft: '1px solid rgba(255,255,255,0.1)',
-      }}
-    >
+    <div className="stat-item">
       <div
         style={{
           fontSize: 'clamp(40px, 4vw, 60px)',

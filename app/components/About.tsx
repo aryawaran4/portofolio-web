@@ -49,14 +49,7 @@ export default function About() {
           About
         </span>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 80,
-            alignItems: 'start',
-          }}
-        >
+        <div className="about-grid">
           {/* Left — summary */}
           <div ref={textRef} className="reveal-fade">
             <h2

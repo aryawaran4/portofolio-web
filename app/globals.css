@@ -212,3 +212,206 @@ body {
 .nav-link:hover {
   color: #1a1a1a;
 }
+
+/* ─── Nav mobile ─────────────────────────────────────────── */
+.nav-desktop {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #1a1a1a;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.nav-mobile-menu {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  z-index: 90;
+  flex-direction: column;
+  padding: 40px 24px 48px;
+  border-top: 1px solid #e4e4e4;
+  overflow-y: auto;
+}
+
+.nav-mobile-menu.open {
+  display: flex;
+}
+
+.nav-mobile-link {
+  font-size: 26px;
+  font-weight: 300;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 18px 0;
+  border-bottom: 1px solid #f0f0f0;
+  transition: color 0.2s ease;
+  display: block;
+}
+
+.nav-mobile-link:hover,
+.nav-mobile-link:active {
+  color: #c0392b;
+}
+
+/* ─── Responsive layout helpers ─────────────────────────── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.exp-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 48px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.edu-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.project-card-layout {
+  display: flex;
+}
+
+.project-thumb {
+  width: 260px;
+  min-height: 200px;
+  flex-shrink: 0;
+}
+
+.project-info {
+  flex: 1;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat-item {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+/* ─── Breakpoints ─────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid,
+  .contact-grid {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-bottom: 48px;
+  }
+
+  .exp-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .edu-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-thesis {
+    text-align: left !important;
+    max-width: 100% !important;
+  }
+
+  .project-card-layout {
+    flex-direction: column;
+  }
+
+  .project-thumb {
+    width: 100%;
+    min-height: 140px;
+  }
+
+  .project-info {
+    padding: 20px 20px;
+  }
+
+  .stat-item {
+    flex: 0 0 50%;
+    padding: 20px 16px;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .stat-item:first-child {
+    padding-left: 16px;
+    border-top: none;
+  }
+
+  .stat-item:nth-child(2) {
+    border-top: none;
+  }
+}
